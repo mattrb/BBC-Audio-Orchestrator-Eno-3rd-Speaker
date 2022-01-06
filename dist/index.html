@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bundle.css" />
+    <title>Eno Speaker</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="bundle.js"></script>
+    <script>
+      
+      
+      
+      
+
+      // Any value specified in config.js may be overwritten here without having to rebuild the app.
+      const config = {
+  "LOCAL_SESSION_ID_PREFIX": "bbcat-orchestration-template",
+  "INITIAL_CONTENT_ID": "9cdb67a0-1bdd-4579-8c2c-29084bb62f53",
+  "SEQUENCE_URLS": [
+    {
+      "name": "Initial sequence",
+      "contentId": "9cdb67a0-1bdd-4579-8c2c-29084bb62f53",
+      "url": "audio/9cdb67a0-1bdd-4579-8c2c-29084bb62f53/sequence.json",
+      "hold": true,
+      "skippable": false,
+      "next": [
+        {
+          "contentId": "9cdb67a0-1bdd-4579-8c2c-29084bb62f53",
+          "label": "Listen again"
+        }
+      ]
+    }
+  ],
+  "CONTROLS": [],
+  "CLOUDSYNC_ENDPOINT": {
+    "hostname": "cloudsync.virt.ch.bbc.co.uk"
+  },
+  "TEXT_TITLE": "Eno Speaker",
+  "TEXT_SUBTITLE": "Ambience from 3rd speaker",
+  "TEXT_INTRODUCTION": "Lets GO!",
+  "TEXT_START_LABEL": "Start new session",
+  "TEXT_JOIN_LABEL": "Join existing session as 3rd Speaker",
+  "ACCENT_COLOUR": "#ff4855",
+  "DEBUG_UI": true,
+  "ENABLE_TUTORIAL": false,
+  "MDO_COMPRESSOR_RATIO": 2,
+  "MDO_COMPRESSOR_THRESHOLD": 0,
+  "PLAYER_IMAGE_URL": "images/7ad083d9-47c1-4b55-bf1e-513f9819101e.jpeg",
+  "TEXT_PLAYER_IMAGE_ALT": ""
+};
+
+      // Instantiate the React app to render into the #app div:
+      initOrchestrationTemplate(document.getElementById('app'), config);
+    </script>
+    <noscript>
+      This page requires JavaScript to be enabled.
+    </noscript>
+  </body>
+</html>

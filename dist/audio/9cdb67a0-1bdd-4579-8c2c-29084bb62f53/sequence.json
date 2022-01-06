@@ -1,0 +1,73 @@
+{
+  "duration": 3241.03,
+  "loop": false,
+  "outPoints": [],
+  "objects": [
+    {
+      "objectId": "1-. ENO 3rd speaker",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": true
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 3240.11,
+          "source": {
+            "channelMapping": "stereo",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/9cdb67a0-1bdd-4579-8c2c-29084bb62f53/1. ENO 3rd speaker_000000/manifest.mpd",
+            "urlSafari": "audio/9cdb67a0-1bdd-4579-8c2c-29084bb62f53/1. ENO 3rd speaker_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    },
+    {
+      "objectId": "2-. Master",
+      "objectBehaviours": [
+        {
+          "behaviourType": "allowedEverywhere"
+        },
+        {
+          "behaviourType": "prohibitedIf",
+          "behaviourParameters": {
+            "conditions": [
+              {
+                "property": "device.deviceIsMain",
+                "operator": "equals",
+                "value": false
+              }
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "start": 0,
+          "duration": 3240.11,
+          "source": {
+            "channelMapping": "stereo",
+            "panning": 0,
+            "type": "dash",
+            "url": "audio/9cdb67a0-1bdd-4579-8c2c-29084bb62f53/2. Master_000000/manifest.mpd",
+            "urlSafari": "audio/9cdb67a0-1bdd-4579-8c2c-29084bb62f53/2. Master_000000/manifest-safari.mpd"
+          }
+        }
+      ]
+    }
+  ]
+}
